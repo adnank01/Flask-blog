@@ -1,0 +1,55 @@
+{% extends "layout.html" %} 
+{% block body %} 
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/home-bg.jpg') }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage your posts and save them .</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <a href="/dashboard"><button class="btn btn-primary">Dashboard Home</button></a>
+                    <a href="/logout"><button class="btn btn-primary">Logout</button></a>
+                    <hr>
+                    <h1>Add/Edit Post</h1>
+                    <form id="contactForm" action="/edit/{{sno}}" method="post" data-sb-form-api-token="API_TOKEN">
+                                <div class="form-floating">
+                                    <input class="form-control" id="title" name="title" type="text" placeholder="title" value='{{post.title}}' data-sb-validations="required" />
+                                    <label for="title">Title</label> <!--here, name is like id that is used in flask to fetch that particular label, the name attribute is used to reference elements .-->
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="tline" name="tline" type="text" placeholder="tagline" value='{{post.tagline}}' data-sb-validations="required,email" />
+                                    <label for="tline">Tagline</label>
+                                    
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="slug" name="slug" type="text" placeholder="slug" value='{{post.slug}}' data-sb-validations="required" />
+                                    <label for="slug">slug</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="content" name="content" placeholder="content"  style="height: 12rem" data-sb-validations="required">{{post.content}}</textarea>
+                                    <label for="content"></label> 
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="img_file" name="img_file" type="text" placeholder="image file" value='{{post.img_file}}'  data-sb-validations="required"></input>
+                                    <label for="img_file">Image File</label> 
+                                </div>
+                                <br />
+                                
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary " id="submitButton" type="submit">Submit</button>
+                            </form>
+                    <!-- Pager-->
+                </div>
+            </div>
+        </div>
+        {% endblock %}
