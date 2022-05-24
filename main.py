@@ -1,5 +1,4 @@
-from msilib.schema import LockPermissions
-from flask import Flask, flash, render_template , request, session, redirect
+from flask import Flask,render_template , request, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail
 from datetime import datetime 
