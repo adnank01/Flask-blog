@@ -1,0 +1,22 @@
+{
+
+    "parameters" : {
+        "local_server" : "True" ,
+        "local_URI" : "mysql://root:@localhost/programmersperspective",
+        "prod_URI" : "mysql://root:@localhost/programmersperspective" ,
+        "fb_url" : "https://facebook.com/proggrammersperspective" ,
+        "tw_url" : "https://twitter.com/",
+        "git_url" : "https://github.com/",
+        "blog_name" : "Programmer's Perspective",
+        "tag_line" : "Programmers like this blog!",
+        "gmail-user" : "ak.official.webtest@gmail.com" ,
+        "gmail-password" : "test101Web",
+        "about-text"  : "This is the about paragraph . Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "no_of_posts" : 2,
+        "login_img" : "pp.svg.png",
+        "admin_user":"ak",
+        "admin_password": "code1234",
+        "upload_location" : "C:\\Users\\khana\\FlaskBloggingWebsite\\static"
+    }
+
+}
