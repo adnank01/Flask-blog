@@ -26,10 +26,10 @@ app.config['UPLOAD_FOLDER'] = params['upload_location']
 mail = Mail(app)
 
 
-if local_server == True :
+'''if local_server == True :
     app.config['SQLALCHEMY_DATABASE_URI'] = params['local_URI'] 
-else :
-    app.config['SQLALCHEMY_DATABASE_URI'] = params['prod_URI']  #contains username and password of database present in configuration file
+else :'''
+app.config['SQLALCHEMY_DATABASE_URI'] = params['prod_URI']  #contains username and password of database present in configuration file
 
 db = SQLAlchemy(app)    #initialisation
 
