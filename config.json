@@ -1,9 +1,9 @@
 {
 
     "parameters" : {
-        "local_server" : "True" ,
+        "local_server" : "False" ,
         "local_URI" : "mysql://root:@localhost/programmersperspective",
-        "prod_URI" : "mysql://root:@localhost/programmersperspective" ,
+        "prod_URI" : "postgres://yiizxmzcylrfqp:7970df487826b8f7723c7ef4111dfb7c3e6a80425932e3fde590bd3ba56a8a1f@ec2-54-165-90-230.compute-1.amazonaws.com:5432/d9un0daf289p1q" ,
         "fb_url" : "https://facebook.com/proggrammersperspective" ,
         "tw_url" : "https://twitter.com/",
         "git_url" : "https://github.com/",
