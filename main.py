@@ -25,7 +25,7 @@ app.config.update(          #SMTP
 app.config['UPLOAD_FOLDER'] = params['upload_location']
 mail = Mail(app)
 
-
+local_server = True
 if local_server == True :
     app.config['SQLALCHEMY_DATABASE_URI'] = params['local_URI'] 
 else :
